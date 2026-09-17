@@ -12,14 +12,15 @@ environment:
 description:
    type: string
    required: true
-   default: 'staging'
+   default: 'staging
+'
    secrets:
      docker_token:
      description: 'Docker Hub authentication token'
      required: true
 
-      jobs: 
-        build:
+jobs:
+  build:
         runs-on: ubuntu-latest
         steps:
         - name: Checkout code
